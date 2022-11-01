@@ -15,7 +15,7 @@ const pessoas = [
 function buscarPeloNome(nome){
    return pessoas.find((pessoa) => pessoa.name === nome);
 }
-console.log(buscarPeloNome("Gabriel Gomes"));
+//console.log(buscarPeloNome("Gabriel Gomes"));
 
 
 // --------------------------------------------------------------------
@@ -36,9 +36,11 @@ const nomesRetornados = pessoas.map(function(e){
 // -------------------------------------------------------------------
 // 5)
 
-const inserirId = pessoas.map(function(element, indice){
-    element.id = indice + 1;
-    return element;
+const inserirId = pessoas.map(function(element, id){
+  let newObj = [];
+    newObj.id = id+1;
+    newObj = {id, ...element}
+    return newObj;
 })
 
 // -------------------------------------------------------------------
