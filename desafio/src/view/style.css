@@ -1,0 +1,41 @@
+:root, .head, .body, .inputArea{
+    display: flex;
+  }
+  
+  :root{
+    background-color: rgb(58, 52, 52);
+    justify-content: center;
+  }
+  
+  .inputArea{  
+    margin: 15px 15px 0 15px;
+    flex-direction: column;
+  }
+  
+  input{
+    margin: 10px 10px 0 0;
+    border-radius: 4px;
+    padding: 4px;
+  }
+  
+  .head{    
+    background-color: #d3fa3a;   
+    padding: 20px;
+    justify-content: center;
+    border-radius: 20px 20px 0 0;
+    border-bottom: 1px solid rgb(0, 0, 0);
+  }
+  
+  .body{
+    flex-direction: column;
+    padding-bottom: 15px;
+  }
+  
+  .form{  
+    margin-top: 40px;
+    background-color: rgb(255, 255, 255); 
+    width: 350px;  
+    border-radius: 20px;
+    border-bottom: 20px;
+  }
+  
