@@ -38,10 +38,11 @@ const nomesRetornados = pessoas.map(function(e){
 
 const inserirId = pessoas.map(function(element, id){
   let newObj = [];
-    newObj.id = id+1;
+    id = id+1;
     newObj = {id, ...element}
     return newObj;
 })
+console.log(inserirId)
 
 // -------------------------------------------------------------------
 // 6)
@@ -49,7 +50,6 @@ const inserirId = pessoas.map(function(element, id){
 function filtrar(element) {    
     return element.age > 18;
 }
-
 const resposta = pessoas.filter(filtrar);
 
 // -------------------------------------------------------------------
