@@ -37,10 +37,9 @@ const nomesRetornados = pessoas.map(function(e){
 // 5)
 
 const inserirId = pessoas.map(function(element, id){
-  let newObj = [];
     id = id+1;
-    newObj = {id, ...element}
-    return newObj;
+    element = {id, ...element}
+    return element;
 })
 console.log(inserirId)
 
