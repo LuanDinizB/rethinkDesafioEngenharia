@@ -1,9 +1,8 @@
+import NameForm from './view/forms';
 
 function App() {
   return (
-    <div className="App">
-      
-    </div>
+    <NameForm/>
   );
 }
 
